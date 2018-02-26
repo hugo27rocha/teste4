@@ -67,7 +67,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </head>
 <body>
 
-	<h1>BRUH</h1>
+	<h1>és uma Merda</h1>
 
 </body>
 </html>
