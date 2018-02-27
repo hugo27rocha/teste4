@@ -3,7 +3,18 @@
 try {
     $conn = new PDO("sqlsrv:server = tcp:fcul.database.windows.net,1433; Database = app", "Elementos", "{Fcul2018!}");
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    
+    $sql1 = CREATE TABLE `admin_table` (
+  	`admin_id` int(5) NOT NULL,
+  	`username` varchar(255) NOT NULL,
+  	`password` varchar(255) NOT NULL,
+  	`email` varchar(255) NOT NULL
+	);
+
+   
+
+  $conn->query($sql);
+
+  
 
 }
 catch (PDOException $e) {
